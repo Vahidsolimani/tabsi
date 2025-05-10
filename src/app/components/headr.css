@@ -1,0 +1,29 @@
+/* در فایل global.css */
+:root {
+  --color-primary: #ff5722; /* نارنجی تپسی */
+  --color-primary-dark: #e64a19;
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.hover\:bg-primary-dark:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+
+.mobile-menu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.mobile-menu.open {
+  max-height: 500px;
+  transition: max-height 0.5s ease-in;
+}
